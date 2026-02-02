@@ -5,9 +5,43 @@
 <head>
 	<link rel="stylesheet" href="styles.css">
 </head>
+	<style>
+		.holder {
+    display: flex;              /* enable flexbox */
+    flex-wrap: wrap;            /* allow items to move to next row */
+    justify-content: space-between; /* first and last touch edges, space between items */
+    gap: 10px;                  /* optional: space between rows */
+}
+
+.item {
+    width: 100px;               /* fixed width */
+    height: 100px;              /* fixed height */
+    display: flex;              /* center number inside */
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: black;
+}
+
+/* Assign colors based on number (as shown in image) */
+.item1 { background-color: red; }
+.item2 { background-color: blue; }
+.item3, .item4, .item5, .item6, .item7 { background-color: green; }
+
+	</style>
 
 <body>
 	<!-- the entire body must be written by student -->
+	<div class="holder">
+    <div class="item item3">3</div>
+    <div class="item item1">1</div>
+    <div class="item item2">2</div>
+    <div class="item item4">4</div>
+    <div class="item item5">5</div>
+    <div class="item item6">6</div>
+    <div class="item item7">7</div>
+</div>
+
     <script type="text/javascript" src="./script.js">
 </script>
 
